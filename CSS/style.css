@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-navbar {
+    background-color: #2C3E50;
+    padding: 30px 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.top-navbar .navbar-nav{
+    gap: 25px;
+}
+
+.top-navbar .navbar-nav .nav-item {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.top-navbar .navbar-nav .nav-item a {
+    color: #ffff;
+}
+
+.top-navbar .navbar-nav .nav-item a:hover {
+    color: #1ABC9C;
+}
+
+.hero-section {
+    background-color: #1ABC9C;
+    padding-top: 100px ;
+    height: 100vh;
+}
+.hero-content {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.hero-content i {
+    font-size: 50px;
+}
+
+.portofolio-section {
+    padding: 60px 0px;
+}
+
+.portofolio-box{
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.box-red {
+    background-color: #BA4C63;
+}
+
+.box-tosca {
+    background-color: #1FA4B6;
+}
+
+.box-black {
+    background-color: #130F0F;
+}
+
+.box-blue {
+    background-color: #1D83C1;
+}
+
+.box-dark-blue {
+    background-color: #1037B5;
+}
+
+.box-brown {
+    background-color: #CCB2A3;
+}
