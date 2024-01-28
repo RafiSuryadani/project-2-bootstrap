@@ -7,6 +7,7 @@ body {
     padding: 30px 0px;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .top-navbar .navbar-nav{
@@ -29,11 +30,11 @@ body {
 .hero-section {
     background-color: #1ABC9C;
     padding-top: 100px ;
-    height: 100vh;
+    height: auto;
 }
 .hero-content {
     display: flex;
-    height: 80vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -52,9 +53,42 @@ body {
 }
 
 .portofolio-box{
-    height: 300px;
-    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
 
+  img{
+    border-radius: 10px;
+  }
+  .overlay {
+    background-color: #1ABC9C;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.8;
+    display: none;
+    .bi{
+        font-size: 50px;
+        color: #fff;
+    }
+  }
+
+}
+
+.portofolio-box:hover {
+    .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.box-background {
+    height: 285px;
+    border-radius: 10px;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 
 .box-red {
@@ -79,4 +113,83 @@ body {
 
 .box-brown {
     background-color: #CCB2A3;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3rem !important;
+    flex-direction: column;
+    padding: 0px 244px;
+}
+
+.modal-body h1 {
+    text-transform: uppercase;
+}
+
+.modal-body img {
+    gap: 30px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.modal-body p {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #1ABC9C;
+    padding: 50px ;
+    height: auto;
+
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color: #ffff;
+    text-transform: uppercase;
+    
+}
+.about-content i {
+    font-size: 50px;
+}
+
+.about-content p {
+    column-count: 2;
+    column-width: 200px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 0px 80px;
+    padding: 35px 0px;
+}
+
+.button-about {
+    display: flex;
+    padding: 35px 0px;
+}
+
+.btn-xl {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+}
+
+.footer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #2c3e50;
+    color: #fff;
+    gap: 20px;
+}
+
+.footer p {
+    font-size: 1.25rem;
+    font-weight: 400;
 }

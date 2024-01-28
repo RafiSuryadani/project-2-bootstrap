@@ -24,23 +24,23 @@
 
 <body>
     <!-- nav menu -->
-    <nav class="navbar navbar-expand-lg top-navbar" data-bs-theme="dark">
+    <nav id="navMenu" class="navbar navbar-expand-lg top-navbar" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="#"><b><i class="bi bi-stars"></i> START BOOTSTRAP</b></a>
+            <a class="navbar-brand" href="#section1"><b><i class="bi bi-stars"></i> START BOOTSTRAP</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="bi bi-briefcase-fill"></i> PORTOFOLIO
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Website</a></li>
+                            <li><a class="dropdown-item" href="#section2">Website</a></li>
                             <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -49,7 +49,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-person-fill"></i> ABOUT</a>
+                        <a class="nav-link" aria-current="page" href="#section3"><i class="bi bi-person-fill"></i>
+                            ABOUT</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> contact</a>
@@ -60,51 +61,149 @@
     </nav>
     <!-- end nav menu -->
 
-    <!-- Hero Section -->]
+    <div class="wrapper" data-bs-spy="scroll" data-bs-target="#navMenu">
 
-    <div class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <img src="assets/avataaars.svg" alt="avatr" height="auto" width="200">
+        <!-- Hero Section -->]
 
-                <h1>START Bootstrap</h1>
-                <i class="bi bi-star-fill"> </i>
-                <h4> Web Designer - Frontend - Webflow dev</h4>
+        <div class="hero-section" id="section1">
+            <div class="container">
+                <div class="hero-content">
+                    <img src="assets/avataaars.svg" alt="avatr" height="auto" width="200">
+
+                    <h1>START Bootstrap</h1>
+                    <i class="bi bi-star-fill"> </i>
+                    <h4> Web Designer - Frontend - Webflow dev</h4>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- end hero section -->
+        <!-- end hero section -->
 
-    <div class="portofolio-section">
-        <div class="container">
-            <div class="portofolio-items">
-                <h2 class="text-center">PORTOFOLIO</h2><br>
-                <div class="row gx-5 gy-5">
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-red"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-tosca"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-black"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-blue"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-dark-blue"></div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="portofolio-box box-brown"></div>
-                    </div>
+        <div class="portofolio-section" id="section2">
+            <div class="container">
+                <div class="portofolio-items">
+                    <h1 class="text-center"><b>PORTOFOLIO</b></h1><br>
+                    <div class="row gx-5 gy-5">
 
+                        <!-- box red -->
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background" data-bs-toggle="modal"
+                                data-bs-target="#modalRed">
+                                <img src="assets/box-red.png" width="100%">
+                                <div class="overlay"><i class="bi bi-plus-circle"></i></div>
+                            </div>
+                            <div class="modal fade" id="modalRed" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1 class="modal-title" id="exampleModalLabel">Modal Red</b></h1>
+                                            <i class="bi bi-star-fill"></i>
+                                            <img src="assets/box-red.png">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Mollitia
+                                                neque
+                                                assumenda ipsam nihil, molestias magnam, recusandae quos quis
+                                                inventore
+                                                quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod
+                                                consequuntur itaque. Nam.
+                                            </p>
+                                            <div class="text-center mt-4">
+                                                <button class="btn btn-warning " data-bs-dismiss="modal">CENCEL</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background">
+                                <img src="assets/box-red.png" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background">
+                                <img src="assets/box-red.png" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background">
+                                <img src="assets/box-red.png" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background">
+                                <img src="assets/box-red.png" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portofolio-box box-background">
+                                <img src="assets/box-red.png" width="100%">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section" id="section3">
+            <div class="container">
+                <div class="about-content">
+                    <h1><b>About</b></h1>
+                    <i class="bi bi-star-fill"> </i>
+                    <p> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                        complete
+                        source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+                        customization.
+
+                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add
+                        your email address to the contact form to make it fully functional!</p>
+
+                    <div class="button-about">
+                        <a href="#" class="btn btn-xl btn-outline-light ">Free
+                            download</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="text-uppercase"><b>location</b></h2>
+                    <p>2215 John Daniel Drive
+                        <br>
+                        Clark, MO 65243
+                    </p>
+                </div>
+
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="text-uppercase"><b>AROUND THE WEB</b></h2>
+                    <p><i class="bi bi-star-fill"> </i><i class="bi bi-star-fill"> </i><i class="bi bi-star-fill">
+                        </i><i class="bi bi-star-fill"> </i>
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h2 class="text-uppercase"><b>ABOUT FREELANCER</b></h2>
+                    Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#">Start Bootstrap</a>
+                    .
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
